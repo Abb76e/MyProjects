@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Share Tech Mono', monospace;
+}
+
+header {
+    background: url("/navigationbar/imgs/hdrbg.jpg") no-repeat center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background: hsl(0, 0%, 0%);
+    height: 18%;
+    box-shadow:  0 0 0.7em hsl(0, 0%, 0%);
+}
+
+.logo {
+   width: 100px;
+   height: 70%;
+}
+
+.nav-menu {
+    display: flex;
+}
+
+.nav-menu li {
+    list-style: none;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    padding: 1rem;
+    color: darkgray;
+    transition: 1s ease-in-out;
+}
+
+.nav-menu a.active {
+    color: white;
+}
+
+.nav-menu a:hover {
+    color: white;
+}
+
+@media screen and (max-width: 468px) {
+    .navbar {
+        justify-content: center;
+    }
+    .nav-menu {
+        padding-bottom: 0.3em;
+    }
+}

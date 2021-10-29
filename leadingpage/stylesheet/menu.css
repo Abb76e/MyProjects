@@ -1,0 +1,131 @@
+.menu-wrap {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    display: none;
+  }
+  
+  .menu-wrap .toggler {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+  }
+  
+  .menu-wrap .hamburger {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    width: 60px;
+    height: 60px;
+    padding: 1rem;
+    background: hsl(187, 100%, 28%);
+    border-radius: 50%;
+    box-shadow: 0 0 10px hsl(187, 98%, 44%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .menu-wrap .hamburger > span {
+    position: relative;
+    flex: none;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.6s ease;
+  }
+  
+ 
+  .menu-wrap .hamburger > span::before,
+  .menu-wrap .hamburger > span::after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: -10px;
+    width: 100%;
+    height: 2px;
+    background: inherit;
+  }
+  
+ 
+  .menu-wrap .hamburger > span::after {
+    top: 10px;
+  }
+  
+ 
+  .menu-wrap .toggler:checked + .hamburger > span {
+    transform: rotate(135deg);
+  }
+  
+  .menu-wrap .toggler:checked + .hamburger > span:before,
+  .menu-wrap .toggler:checked + .hamburger > span:after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  
+  
+  .menu-wrap .toggler:checked:hover + .hamburger > span {
+    transform: rotate(225deg);
+  }
+
+  /*Show the nav menu */
+  .menu-wrap .toggler:checked~.nav-menu {
+      width: 50%;
+  }
+
+ .menu-wrap .nav-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 100vh;
+    background: darkcyan; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    transition: 1s ease;
+ }
+
+.menu-wrap .nav-menu>li {
+    list-style: none;
+    padding: 1rem; 
+}
+
+.menu-wrap .nav-menu>li>a {
+    position: relative;
+    text-decoration: none;
+    padding-bottom: 3px;
+    font-size: 1rem;
+    font-weight: 300;
+    color: darkgrey;
+    cursor: pointer;
+    transition: 1s ease-in-out;
+}
+
+.menu-wrap .nav-menu>li>a.active {
+    color: white;
+}
+
+.menu-wrap .nav-menu>li>a:hover::after,
+.menu-wrap .nav-menu>li>a:hover {
+    width: 100%;
+    color: white;
+}
+
+
+@media  screen and (max-width: 468px) {
+    .menu-wrap {
+        display: block;
+    }
+}

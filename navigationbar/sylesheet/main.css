@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    background: url("/navigationbar/imgs/hdrbg2.jpg") no-repeat center/cover;
+    width: 100%;
+    height: 100vh;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: darkcyan;
+}
+
+.logo {
+    width: 100px;
+    height: 100%;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 1rem;
+}
+
+nav ul li a {
+    position: relative;
+    text-decoration: none;
+    padding-bottom: 2px;
+    font-size: 1rem;
+    font-weight: 300;
+    color: darkgrey;
+    cursor: pointer;
+    transition: 1s ease-in-out;
+}
+
+nav ul li a.active {
+    color: white;
+}
+
+nav ul li a:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: cyan;
+    transition: 1s ease;
+}
+
+nav ul li a:hover::after,
+nav ul li a:hover {
+    width: 100%;
+    color: white;
+}
+
+@media screen and (max-width: 468px) {
+    nav ul {
+        display: none;
+    }
+}
