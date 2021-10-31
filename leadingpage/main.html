@@ -1,45 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/leadingpage/stylesheet/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Great Shoes inc.</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/leadingpage/css/main.css" />
 </head>
+
 <body>
-    <main>
-        <header>
-            <nav>
-                <img src="/leadingpage/imgs/istockphoto-1253989842-612x612.jpg" alt="logo" class="logo">
-                <ul>
-                    <li><a href="#" class="active">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-        <section class="services">
-            <section class="container">
-                <section>
-                    <i class="fas fa-gamepad"></i>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam voluptate dicta rem nisi possimus aut in, ullam excepturi dignissimos provident.</p>
-                    <button class="btn">Learn More</button>
-                </section>
-                <section>
-                    <i class="fa fa-earth-americas"></i>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam voluptate dicta rem nisi possimus aut in, ullam excepturi dignissimos provident.</p>
-                    <button  class="btn">Learn More</button>
-                </section>
-                <section>
-                    <i class="fa fa-rss"></i>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam voluptate dicta rem nisi possimus aut in, ullam excepturi dignissimos provident.</p>
-                    <button  class="btn">Learn More</button>
-                </section>
-            </section>
-        </section>
-    </main>
+
+  <header class="hero">
+    <div class="container spacing">
+      <h1 class="primary-title">Amazing shoes at an amazing price</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quam perspiciatis facilis beatae laudantium
+        quidem enim sit sequi!</p>
+      <a href="#" class="btn">See what we have</a>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="featured">
+      <div class="container">
+        <h2 class="section-title">Featured products</h2>
+        <div class="split">
+          <a href="#" class="featured__item">
+            <img src="images/shoe-1.png" alt="" class="featured__img">
+            <p class="featured__details"><span class="price">$99</span>shoe name</p>
+          </a>
+          <a href="#" class="featured__item">
+            <img src="images/shoe-5.png" alt="" class="featured__img">
+            <p class="featured__details"><span class="price">$99</span>shoe name</p>
+          </a>
+          <a href="#" class="featured__item">
+            <img src="images/shoe-6.png" alt="" class="featured__img">
+            <p class="featured__details"><span class="price">$99</span>shoe name</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="our-products">
+      <div class="container">
+        <h2 class="section-title">Our products</h2>
+
+        <article class="product shoe-red spacing">
+          <img src="images/shoe-1.png" alt="" class="product__image">
+          <h3 class="product__title">A really nice shoe</h3>
+          <p class="product__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quam
+            perspiciatis facilis beatae laudantium quidem enim sit sequi!</p>
+          <a href="" class="btn">Buy now</a>
+        </article>
+
+        <article class="product shoe-white shoe-left spacing">
+          <img src="images/shoe-2.png" alt="" class="product__image">
+          <h3 class="product__title">A really nice shoe</h3>
+          <p class="product__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quam
+            perspiciatis facilis beatae laudantium quidem enim sit sequi!</p>
+          <a href="" class="btn">Buy now</a>
+        </article>
+
+        <article class="product shoe-blue spacing">
+          <img src="images/shoe-3.png" alt="" class="product__image">
+          <h3 class="product__title">A really nice shoe</h3>
+          <p class="product__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quam
+            perspiciatis facilis beatae laudantium quidem enim sit sequi!</p>
+          <a href="" class="btn">Buy now</a>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
 </body>
+
 </html>
