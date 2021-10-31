@@ -1,6 +1,4 @@
-
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
-
 
 :root {
   --white: #fff;
@@ -53,12 +51,6 @@ li {
   align-items: center;
 }
 
-/* 
-=================
-Header
-=================
-*/
-
 .header {
   position: relative;
   min-height: 100vh;
@@ -81,11 +73,6 @@ Header
   padding: 0 0.5rem;
 }
 
-/* 
-=================
-Navigation
-=================
-*/
 .navigation {
   height: 6rem;
   line-height: 6rem;
@@ -118,8 +105,6 @@ Navigation
   color: var(--black);
   cursor: pointer;
 }
-
-/* Icons */
 
 .icon {
   cursor: pointer;
@@ -201,12 +186,6 @@ Navigation
   }
 }
 
-/* 
-=================
-Hero Area
-=================
-*/
-
 .hero,
 .hero .glide__slides {
   background-color: var(--grey2);
@@ -268,7 +247,7 @@ Hero Area
 
 .center .right img.img1 {
   width: 85%;
-  right: -25%;
+  right: -28%;
   bottom: -50%;
 }
 
@@ -288,11 +267,6 @@ Hero Area
   top: 35%;
 }
 
-/*
-======================
-Hero Media Query
-======================
-*/
 @media only screen and (max-width: 999px) {
   .glide__slide--active .left {
     top: 15%;
@@ -335,7 +309,6 @@ Hero Media Query
   }
 }
 
-/* Category Section */
 .section {
   padding: 10rem 0 5rem 0;
   overflow: hidden;
@@ -431,7 +404,6 @@ Hero Media Query
   }
 }
 
-/* New Arrivals */
 .title {
   text-align: center;
   margin-bottom: 5rem;
@@ -604,7 +576,6 @@ Hero Media Query
   }
 }
 
-/* Banner */
 
 .banner {
   position: relative;
@@ -719,7 +690,6 @@ Hero Media Query
   }
 }
 
-/* Contact */
 .contact {
   background-color: var(--black);
   color: var(--white);
@@ -799,7 +769,7 @@ Hero Media Query
   }
 }
 
-/* Footer */
+
 .footer {
   padding: 7rem 1rem;
   background-color: var(--green);
@@ -847,7 +817,6 @@ footer .row {
   }
 }
 
-/* Popup */
 .popup {
   position: fixed;
   top: 0;
@@ -1075,7 +1044,6 @@ footer .row {
   }
 }
 
-/* All Products */
 .section .top {
   display: flex;
   align-items: center;
@@ -1112,7 +1080,6 @@ form span {
   }
 }
 
-/* Pagination */
 .pagination {
   display: flex;
   align-items: center;
@@ -1135,7 +1102,6 @@ form span {
   color: #fff;
 }
 
-/* Cart Items */
 .cart {
   margin: 10rem auto;
 }
@@ -1214,7 +1180,6 @@ th:last-child {
   }
 }
 
-/* Product Details */
 .product-detail .details {
   display: grid;
   grid-template-columns: 1fr 1.2fr;
@@ -1340,7 +1305,6 @@ th:last-child {
   }
 }
 
-/* Login Form */
 .login-form {
   padding: 5rem 0;
   max-width: 50rem;
