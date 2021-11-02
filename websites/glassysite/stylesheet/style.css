@@ -46,6 +46,12 @@
     backdrop-filter: blur(2rem);
     display: flex;
   }
+
+  .user img {
+      width: 50%;
+      border-radius: 50%;
+  }
+
   .circle1,
   .circle2 {
     background: white;
@@ -115,7 +121,6 @@
     font-weight: 600;
   }
   
-  /* GAMES */
   .status {
     margin-bottom: 3rem;
   }
