@@ -489,11 +489,13 @@ img {
 }
 
 .contact .row .col h2 {
+  color: #222;  
   margin-bottom: 1.5rem;
   font-size: 3rem;
 }
 
 .contact .row .col p {
+  color: #222;  
   font-size: 1.8rem;
   width: 70%;
   margin-bottom: 2rem;
@@ -521,7 +523,11 @@ img {
   border-radius: 1rem;
   padding: 2rem 0;
   outline: none;
-  border: none;
+  border: 1px solid #222;
+}
+
+.contact form input:active {
+    border: 2px solid lightgreen;
 }
 
 .contact form a {
