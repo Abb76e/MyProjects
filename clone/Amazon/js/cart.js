@@ -114,5 +114,4 @@ function createEventListeners() {
 
 }
 
-
 getCartItems();
