@@ -46,6 +46,7 @@ header .navbar a{
 font-size: 2rem;
 color: var(--fontcolor);
 margin-left: 1rem;
+cursor: pointer;
 }
 header #menu_bars{
     font-size: 2rem;
@@ -92,6 +93,7 @@ header .navbar.active{
     color: white;
     border-radius: 10px;
     border:1px solid white;
+    cursor: pointer;
 }
 .service-section{
     padding: 2rem 7%;
@@ -218,12 +220,16 @@ header .navbar.active{
     color: var(--fontcolor);
     font-size: 2rem;
     padding:1rem 0;
+    cursor: pointer;
 }
-.main-footer{
+footer {
+    background: #222;
+}
+
+.footer-container{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    background: #222;
     padding: 2rem 9%;
 }
 .inner-footer{
@@ -240,6 +246,11 @@ header .navbar.active{
     color: white;
     font-size: 1.5rem;
     padding: 1rem;
+}
+
+.copyright_text {
+    text-align: center;
+    color: white;
 }
 
 @media (max-width:768px) {
